@@ -191,4 +191,4 @@ Please present both detailed information about each paper and a high-level synth
 if __name__ == "__main__":
     # Initialize and run the server
     port = int(os.environ.get("PORT", 8080))
-    mcp.run(transport="streamable-http", host="0.0.0.0", port=port)
+    mcp.run(transport="sse", host="0.0.0.0", port=port)
